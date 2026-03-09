@@ -1,5 +1,3 @@
-# danielrodriguezsfdc-dev.github.io
-Daniel Rodriguez Portfolio
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,11 +58,6 @@ Daniel Rodriguez Portfolio
         .skills span { background: #2d3748; color: #a0aec0; padding: 2px 8px; border-radius: 4px; margin-right: 5px; display: inline-block; margin-bottom: 4px; }
         .tech span { background: #1a3a4a; color: #81e6d9; padding: 2px 8px; border-radius: 4px; margin-right: 5px; display: inline-block; margin-bottom: 4px; }
 
-        .description { color: #cbd5e0; margin-bottom: 10px; }
-        .tech-list { margin-top: 10px; }
-        .tech-list strong { color: #a0aec0; }
-        .tech-list .tier { margin: 6px 0; padding-left: 15px; border-left: 3px solid #4a90d9; }
-
         .star { margin-top: 15px; }
         .star h4 { color: #cbd5e0; margin-bottom: 5px; font-size: 14px; }
         .star p { margin: 0 0 10px 0; padding-left: 15px; border-left: 3px solid #4a90d9; }
@@ -84,6 +77,8 @@ Daniel Rodriguez Portfolio
 <body>
 
 <h1 id="top">Daniel Rodriguez - Project Portfolio</h1>
+<p style="color: #a0aec0; font-size: 16px; margin-top: -5px; margin-bottom: 2px;">4x Certified Salesforce Platform Lead | 8 Years Experience</p>
+<p style="color: #718096; font-size: 14px; margin-top: 0;">Buenos Aires, Argentina • <a href="mailto:daniel.rodriguez.sfdc@gmail.com" style="color: #63b3ed;">daniel.rodriguez.sfdc@gmail.com</a> • <a href="tel:+5491124004601" style="color: #63b3ed;">+54 911 2400 4601</a> • <a href="https://linkedin.com/in/daniel-r-sfdc/" style="color: #63b3ed;">linkedin.com/in/daniel-r-sfdc/</a></p>
 
 <div class="toc">
     <h2>Table of Contents</h2>
@@ -112,15 +107,16 @@ Daniel Rodriguez Portfolio
             <span class="filter-label">Tools & Features <span class="clear-filters" onclick="clearFilters('tech')">(clear)</span></span>
             <div class="filter-buttons" id="tech-filters">
                 <button class="filter-btn" data-filter="tech" data-value="agentforce" onclick="toggleFilter(this)">Agentforce</button>
+                <button class="filter-btn" data-filter="tech" data-value="analytics-studio" onclick="toggleFilter(this)">Analytics Studio (Tableau)</button>
                 <button class="filter-btn" data-filter="tech" data-value="apex" onclick="toggleFilter(this)">Apex</button>
                 <button class="filter-btn" data-filter="tech" data-value="cloudingo" onclick="toggleFilter(this)">Cloudingo</button>
-                <button class="filter-btn" data-filter="tech" data-value="crm-analytics" onclick="toggleFilter(this)">Analytics Studio (Tableau)</button>
                 <button class="filter-btn" data-filter="tech" data-value="data-loader" onclick="toggleFilter(this)">Data Loader</button>
                 <button class="filter-btn" data-filter="tech" data-value="dynamic-forms" onclick="toggleFilter(this)">Dynamic Forms</button>
                 <button class="filter-btn" data-filter="tech" data-value="eac" onclick="toggleFilter(this)">Einstein Activity Capture</button>
                 <button class="filter-btn" data-filter="tech" data-value="flow" onclick="toggleFilter(this)">Flow</button>
                 <button class="filter-btn" data-filter="tech" data-value="linkedin-sales-navigator" onclick="toggleFilter(this)">LinkedIn Sales Navigator</button>
                 <button class="filter-btn" data-filter="tech" data-value="postgresql" onclick="toggleFilter(this)">PostgreSQL</button>
+                <button class="filter-btn" data-filter="tech" data-value="sales-cloud" onclick="toggleFilter(this)">Sales Cloud</button>
                 <button class="filter-btn" data-filter="tech" data-value="salesforce-shield" onclick="toggleFilter(this)">Salesforce Shield</button>
                 <button class="filter-btn" data-filter="tech" data-value="service-cloud" onclick="toggleFilter(this)">Service Cloud</button>
                 <button class="filter-btn" data-filter="tech" data-value="validation-rules" onclick="toggleFilter(this)">Validation Rules</button>
@@ -128,65 +124,61 @@ Daniel Rodriguez Portfolio
             </div>
         </div>
 
-        <div class="filter-count" id="filter-count">Showing 14 of 14 projects</div>
+        <div class="filter-count" id="filter-count">Showing 13 of 13 projects</div>
     </div>
 
     <ul id="toc-list">
-        <li data-skills="integration,data-quality-governance" data-tech="zoominfo,eac">
-            <a href="#gtm-tech-stack">GTM Tech Stack Ownership</a>
-            <div class="toc-meta">ZoomInfo, EAC, 6Sense, Outreach +5 more | Integration, Data Quality & Governance</div>
-        </li>
-        <li data-skills="solution-design,data-architecture,automation,integration" data-tech="flow,zoominfo,linkedin-sales-navigator,eac">
+        <li data-skills="solution-design,data-architecture,automation,integration,data-quality-governance,stakeholder-management,ux-design,process-design" data-tech="flow,zoominfo,linkedin-sales-navigator,sales-cloud">
             <a href="#contact-lifecycle">Contact Lifecycle Tracking System</a>
-            <div class="toc-meta">Flow, ZoomInfo, LinkedIn Sales Navigator, EAC | Solution Design, Data Architecture</div>
+            <div class="toc-meta">Flow, ZoomInfo, LinkedIn Sales Navigator, Sales Cloud | Solution Design, Data Architecture, Integration</div>
         </li>
-        <li data-skills="automation,data-quality-governance,integration" data-tech="cloudingo,zoominfo,flow">
+        <li data-skills="automation,data-quality-governance,integration,process-design" data-tech="cloudingo,zoominfo,flow">
             <a href="#lead-auto-conversion">Lead Auto-Conversion System</a>
-            <div class="toc-meta">Cloudingo, ZoomInfo, Flow | Automation, Data Quality & Governance</div>
+            <div class="toc-meta">Cloudingo, ZoomInfo, Flow | Automation, Data Quality & Governance, Process Design</div>
         </li>
-        <li data-skills="data-architecture,integration,sql,reporting-analysis" data-tech="postgresql,data-loader">
+        <li data-skills="data-architecture,integration,sql,data-quality-governance" data-tech="postgresql,data-loader">
             <a href="#data-enrichment">Data Enrichment Pipeline</a>
-            <div class="toc-meta">PostgreSQL, Data Loader | SQL, Data Architecture</div>
+            <div class="toc-meta">PostgreSQL, Data Loader | SQL, Data Architecture, Data Quality & Governance</div>
         </li>
-        <li data-skills="data-architecture,reporting-analysis,solution-design" data-tech="flow">
+        <li data-skills="data-architecture,reporting-analysis,solution-design" data-tech="flow,sales-cloud">
             <a href="#contact-scoring">Contact Priority Scoring</a>
-            <div class="toc-meta">Flow | Data Architecture, Reporting & Analysis</div>
+            <div class="toc-meta">Flow, Sales Cloud | Data Architecture, Reporting & Analysis</div>
         </li>
-        <li data-skills="data-quality-governance,reporting-analysis,process-design" data-tech="flow,data-loader">
+        <li data-skills="data-quality-governance,reporting-analysis,sql" data-tech="flow,data-loader,postgresql,sales-cloud">
             <a href="#lead-cleanup">Lead Data Cleanup</a>
-            <div class="toc-meta">Flow, Data Loader | Data Quality & Governance</div>
+            <div class="toc-meta">Flow, Data Loader, PostgreSQL, Sales Cloud | Data Quality & Governance, SQL</div>
         </li>
-        <li data-skills="data-architecture,stakeholder-management,process-design,automation" data-tech="flow,validation-rules,dynamic-forms">
+        <li data-skills="data-architecture,stakeholder-management,process-design,automation,data-quality-governance,solution-design" data-tech="flow,validation-rules,dynamic-forms,sales-cloud">
             <a href="#meddic">MEDDIC Data Architecture Redesign</a>
-            <div class="toc-meta">Flow, Validation Rules, Dynamic Forms | Data Architecture, Stakeholder Management</div>
+            <div class="toc-meta">Flow, Validation Rules, Dynamic Forms, Sales Cloud | Data Architecture, Stakeholder Management</div>
         </li>
-        <li data-skills="reporting-analysis,stakeholder-management,process-design" data-tech="crm-analytics">
+        <li data-skills="reporting-analysis,stakeholder-management,process-design,data-quality-governance" data-tech="flow,sales-cloud">
             <a href="#sales-process">Sales Process Analysis</a>
-            <div class="toc-meta">Analytics Studio (Tableau) | Reporting & Analysis, Process Design</div>
+            <div class="toc-meta">Flow, Sales Cloud | Reporting & Analysis, Process Design, Data Quality & Governance</div>
         </li>
-        <li data-skills="solution-design,automation,ux-design,process-design" data-tech="flow,service-cloud">
+        <li data-skills="solution-design,automation,ux-design,process-design,reporting-analysis" data-tech="flow,service-cloud">
             <a href="#internal-support">Internal Support Platform</a>
-            <div class="toc-meta">Flow, Service Cloud | Solution Design, UX Design</div>
+            <div class="toc-meta">Flow, Service Cloud | Solution Design, UX Design, Reporting & Analysis</div>
         </li>
-        <li data-skills="change-management,integration,automation" data-tech="eac">
+        <li data-skills="change-management,integration,stakeholder-management,reporting-analysis" data-tech="eac,sales-cloud">
             <a href="#eac-migration">EAC Implementation + Riva Migration</a>
-            <div class="toc-meta">Einstein Activity Capture | Change Management, Integration</div>
+            <div class="toc-meta">Einstein Activity Capture, Sales Cloud | Change Management, Integration</div>
         </li>
-        <li data-skills="change-management,ux-design,automation" data-tech="dynamic-forms">
+        <li data-skills="change-management,ux-design" data-tech="dynamic-forms,sales-cloud,service-cloud">
             <a href="#dynamic-forms">Dynamic Forms Migration</a>
-            <div class="toc-meta">Dynamic Forms | Change Management, UX Design</div>
+            <div class="toc-meta">Dynamic Forms, Sales Cloud, Service Cloud | Change Management, UX Design</div>
         </li>
-        <li data-skills="ai-implementation,solution-design" data-tech="agentforce,flow,service-cloud">
+        <li data-skills="ai-implementation,solution-design,automation,ux-design" data-tech="agentforce,flow,service-cloud">
             <a href="#agentforce">Agentforce Service Cloud POC</a>
-            <div class="toc-meta">Agentforce, Flow, Service Cloud | AI Implementation</div>
+            <div class="toc-meta">Agentforce, Flow, Service Cloud | AI Implementation, Solution Design</div>
         </li>
-        <li data-skills="compliance-security,reporting-analysis" data-tech="salesforce-shield,crm-analytics,apex">
+        <li data-skills="compliance-security,reporting-analysis" data-tech="salesforce-shield,analytics-studio,apex">
             <a href="#shield">Shield Event Monitoring</a>
             <div class="toc-meta">Salesforce Shield, Analytics Studio (Tableau), Apex | Compliance & Security</div>
         </li>
-        <li data-skills="reporting-analysis,solution-design,automation" data-tech="service-cloud,flow">
+        <li data-skills="reporting-analysis,solution-design,automation,data-architecture" data-tech="service-cloud,flow">
             <a href="#service-cloud">Service Cloud Migration (Zendesk)</a>
-            <div class="toc-meta">Service Cloud, Flow | Reporting & Analysis, Solution Design</div>
+            <div class="toc-meta">Service Cloud, Flow | Reporting & Analysis, Solution Design, Data Architecture</div>
         </li>
     </ul>
 </div>
@@ -252,32 +244,19 @@ Daniel Rodriguez Portfolio
         });
 
         document.getElementById('filter-count').textContent =
-            `Showing ${visibleCount} of 14 projects`;
+            `Showing ${visibleCount} of 13 projects`;
     }
 </script>
 
 <!-- PROJECTS -->
-
-<div class="project" id="gtm-tech-stack">
-    <div class="project-header">
-        <h3>GTM Tech Stack Ownership</h3>
-    </div>
-    <p class="description">Managed a complex GTM tech stack with multiple tools supporting Sales, Marketing, CS, and RevOps at a global AdTech SaaS company (300+ Salesforce users).</p>
-    <div class="tech-list">
-        <div class="tier"><strong>End-to-end ownership:</strong> ZoomInfo and EAC (Outlook)</div>
-        <div class="tier"><strong>Admin + Integration:</strong> 6Sense, MediaRadar, Sendoso, Outreach, Seismic</div>
-        <div class="tier"><strong>Integration to SFDC:</strong> Planhat, Account Engagement (Pardot)</div>
-    </div>
-    <div class="back-to-top"><a href="#top">↑ Back to top</a></div>
-</div>
 
 <div class="project" id="contact-lifecycle">
     <div class="project-header">
         <h3>Contact Lifecycle Tracking System</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Solution Design</span><span>Data Architecture</span><span>Automation</span><span>Integration</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Flow</span><span>ZoomInfo</span><span>LinkedIn Sales Navigator</span><span>Einstein Activity Capture</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Solution Design</span><span>Data Architecture</span><span>Automation</span><span>Integration</span><span>Data Quality & Governance</span><span>Stakeholder Management</span><span>UX Design</span><span>Process Design</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Flow</span><span>LinkedIn Sales Navigator</span><span>Sales Cloud</span><span>ZoomInfo</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -299,8 +278,8 @@ Daniel Rodriguez Portfolio
         <h3>Lead Auto-Conversion System</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Automation</span><span>Data Quality & Governance</span><span>Integration</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Cloudingo</span><span>ZoomInfo</span><span>Flow</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Automation</span><span>Data Quality & Governance</span><span>Integration</span><span>Process Design</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Cloudingo</span><span>Flow</span><span>ZoomInfo</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -324,8 +303,8 @@ Daniel Rodriguez Portfolio
         <h3>Data Enrichment Pipeline</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Data Architecture</span><span>Integration</span><span>SQL</span><span>Reporting & Analysis</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>PostgreSQL</span><span>Data Loader</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Data Architecture</span><span>Integration</span><span>SQL</span><span>Data Quality & Governance</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Data Loader</span><span>PostgreSQL</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -350,7 +329,7 @@ Daniel Rodriguez Portfolio
     </div>
     <div class="meta">
         <div class="skills"><strong>Skills:</strong> <span>Data Architecture</span><span>Reporting & Analysis</span><span>Solution Design</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Flow</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Flow</span><span>Sales Cloud</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -373,8 +352,8 @@ Daniel Rodriguez Portfolio
         <h3>Lead Data Cleanup</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Data Quality & Governance</span><span>Reporting & Analysis</span><span>Process Design</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Flow</span><span>Data Loader</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Data Quality & Governance</span><span>Reporting & Analysis</span><span>SQL</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Data Loader</span><span>Flow</span><span>PostgreSQL</span><span>Sales Cloud</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -399,8 +378,8 @@ Daniel Rodriguez Portfolio
         <h3>MEDDIC Data Architecture Redesign</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Data Architecture</span><span>Data Quality & Governance</span><span>Stakeholder Management</span><span>Process Design</span><span>Automation</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Flow</span><span>Validation Rules</span><span>Dynamic Forms</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Data Architecture</span><span>Stakeholder Management</span><span>Process Design</span><span>Automation</span><span>Data Quality & Governance</span><span>Solution Design</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Dynamic Forms</span><span>Flow</span><span>Sales Cloud</span><span>Validation Rules</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -426,8 +405,8 @@ Daniel Rodriguez Portfolio
         <h3>Sales Process Analysis</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Data Quality & Governance</span><span>Reporting & Analysis</span><span>Stakeholder Management</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Flow</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Reporting & Analysis</span><span>Stakeholder Management</span><span>Process Design</span><span>Data Quality & Governance</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Flow</span><span>Sales Cloud</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -452,7 +431,7 @@ Daniel Rodriguez Portfolio
         <h3>Internal Support Platform</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Solution Design</span><span>Automation</span><span>UX Design</span><span>Process Design</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Solution Design</span><span>Automation</span><span>UX Design</span><span>Process Design</span><span>Reporting & Analysis</span></div>
         <div class="tech"><strong>Tools:</strong> <span>Flow</span><span>Service Cloud</span></div>
     </div>
     <div class="star">
@@ -477,8 +456,8 @@ Daniel Rodriguez Portfolio
         <h3>EAC Implementation + Riva Migration</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Change Management</span><span>Integration</span><span>Automation</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Einstein Activity Capture</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Change Management</span><span>Integration</span><span>Stakeholder Management</span><span>Reporting & Analysis</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Einstein Activity Capture</span><span>Sales Cloud</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -502,8 +481,8 @@ Daniel Rodriguez Portfolio
         <h3>Dynamic Forms Migration</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Change Management</span><span>UX Design</span><span>Automation</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Dynamic Forms</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Change Management</span><span>UX Design</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Dynamic Forms</span><span>Sales Cloud</span><span>Service Cloud</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -528,7 +507,7 @@ Daniel Rodriguez Portfolio
         <h3>Agentforce Service Cloud POC</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>AI Implementation</span><span>Solution Design</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>AI Implementation</span><span>Automation</span><span>Solution Design</span><span>UX Design</span></div>
         <div class="tech"><strong>Tools:</strong> <span>Agentforce</span><span>Flow</span><span>Service Cloud</span></div>
     </div>
     <div class="star">
@@ -553,7 +532,7 @@ Daniel Rodriguez Portfolio
     </div>
     <div class="meta">
         <div class="skills"><strong>Skills:</strong> <span>Compliance & Security</span><span>Reporting & Analysis</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Salesforce Shield</span><span>Analytics Studio (Tableau)</span><span>Apex</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Analytics Studio (Tableau)</span><span>Apex</span><span>Salesforce Shield</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
@@ -576,8 +555,8 @@ Daniel Rodriguez Portfolio
         <h3>Service Cloud Migration (Zendesk)</h3>
     </div>
     <div class="meta">
-        <div class="skills"><strong>Skills:</strong> <span>Reporting & Analysis</span><span>Solution Design</span><span>Automation</span></div>
-        <div class="tech"><strong>Tools:</strong> <span>Service Cloud</span><span>Flow</span></div>
+        <div class="skills"><strong>Skills:</strong> <span>Reporting & Analysis</span><span>Solution Design</span><span>Automation</span><span>Data Architecture</span></div>
+        <div class="tech"><strong>Tools:</strong> <span>Flow</span><span>Service Cloud</span></div>
     </div>
     <div class="star">
         <h4>Situation</h4>
